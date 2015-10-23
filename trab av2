@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main  ()
+
+{
+              float peso, altura, imc;
+              printf("informe seu peso:");
+              scanf("%f", &peso);
+              printf("informe sua altura:");
+    
+	          scanf("%f", &altura);
+              imc = peso/(altura*altura);
+              printf( "Seu IMC= %f \n", imc);
+    
+  if((imc > 19.99) && (imc < 25.01))
+                printf ("O seu IMC esta bom \n");
+                
+                     else
+                      if(imc < 19)
+                      printf ("O seu IMC esta abaixo do normal \n");
+    
+                      else
+                      if(imc > 25)
+                      printf ("O seu IMC esta acima do normal \n");
+   
+    
+         system ("PAUSE");
+         return 0;
+    
+            
+}
